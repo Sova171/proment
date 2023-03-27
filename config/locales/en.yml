@@ -1,0 +1,8 @@
+en:
+  main:
+    index:
+      hello: "Hello world"
+  select:
+    index:
+      hi: "Hello Vlad"
+

@@ -1,0 +1,7 @@
+ua:
+  main:
+    index:
+      hello: "Привіт світ"
+  select:
+    index:
+      hi: "Привіт Влад"

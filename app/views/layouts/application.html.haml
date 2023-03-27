@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Proment
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    = javascript_importmap_tags
+
+    = link_to image_tag('en.svg', style: 'width: 1.5%; height: auto;'), locale: :en
+    = link_to image_tag('ua.svg', style: 'width: 1.5%; height: auto;'), locale: :ua
+  %body
+    = yield
