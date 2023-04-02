@@ -1,10 +1,11 @@
 ua:
   main:
     index:
-      hello: "Привіт світ"
-  select:
-    index:
-      hi: "Привіт Влад"
+      about: "Про проект"
+      news: "Новини"
+      events: "Заходи"
+      publications: "Публікації"
+      gallery: "Галерея"
 
   footer:
     media: "Соціальні мережі"

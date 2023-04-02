@@ -1,10 +1,11 @@
 en:
   main:
     index:
-      hello: "Hello world"
-  select:
-    index:
-      hi: "Hello Vlad"
+      about: "About project"
+      news: "News"
+      events: "Events"
+      publications: "Publications"
+      gallery: "Gallery"
 
   footer:
     media: "Social Medias"

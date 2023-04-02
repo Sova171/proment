@@ -45,6 +45,8 @@ gem 'haml-rails'
 
 gem 'rails-i18n'
 
+gem 'bootstrap'
+
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
