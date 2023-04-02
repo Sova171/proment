@@ -6,3 +6,8 @@ en:
     index:
       hi: "Hello Vlad"
 
+  footer:
+    media: "Social Medias"
+    kontacts: "Kontacts"
+    partners: "Partners"
+    support: "Support Project"

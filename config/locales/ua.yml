@@ -5,3 +5,9 @@ ua:
   select:
     index:
       hi: "Привіт Влад"
+
+  footer:
+    media: "Соціальні мережі"
+    kontacts: "Контакти"
+    partners: "Партнери"
+    support: "Підтримати Проєкт"

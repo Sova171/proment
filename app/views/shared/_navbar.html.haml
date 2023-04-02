@@ -1,11 +1,12 @@
-%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
-  .container
-    = image_tag('logo.png', style: 'width: 5%; height: auto;')
-    #navbarNav.collapse.navbar-collapse
-      %ul.navbar-nav.ml-auto
-        %li.nav-item
-          = link_to "Home", root_path, class: "nav-link"
-        %li.nav-item
-          = link_to image_tag('en.svg', style: 'width: 1.5%; height: auto;'), locale: :en
-        %li.nav-item
-          = link_to image_tag('ua.svg', style: 'width: 1.5%; height: auto;'), locale: :ua
+%nav
+  .navbar-logo
+    = image_tag('logo.png', style: 'width: 7%')
+    %span.navbar-site-name Proment
+  %ul.navbar-links
+    %li
+      = link_to 'Hi Vlad', 'https://developer.mozilla.org/ru/docs/Web/CSS/font'
+    %li
+      = link_to 'Hi EveryBody', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  .navbar-flags
+    = link_to image_tag('en.jpg'), locale: :en
+    = link_to image_tag('ua.jpg'), locale: :ua
