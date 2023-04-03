@@ -47,6 +47,8 @@ gem 'rails-i18n'
 
 gem 'bootstrap'
 
+gem 'faker'
+
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end

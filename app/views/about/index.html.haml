@@ -1,0 +1,11 @@
+%h5= t('footer.partners')
+
+#accordionPanelsStayOpenExample.accordion
+  - @facade.partners.each_with_index  do |partner, index|
+    .accordion-item
+      %h2.accordion-header
+        %button.accordion-button.collapsed{"aria-controls" => "panelsStayOpen-collapse#{(index+1).to_s}", "aria-expanded" => "false", "data-bs-target" => "#panelsStayOpen-collapse#{(index+1).to_s}", "data-bs-toggle" => "collapse", type: "button"}
+          = partner.name
+      .accordion-collapse.collapse{id: "panelsStayOpen-collapse#{(index+1).to_s}"}
+        .accordion-body
+          = (I18n.locale == :ua) ? partner.ua_description : partner.en_description
