@@ -2,10 +2,10 @@
   - @facade.categories.each do |category|
     - if category == params[:category]
       %li.nav-item
-        = link_to category.second, articles_index_path(category: category), class: 'nav-link active'
+        = link_to category.second, articles_path(category: category), class: 'nav-link active'
     - else
       %li.nav-item
-        = link_to category.second, articles_index_path(category: category), class: 'nav-link'
+        = link_to category.second, articles_path(category: category), class: 'nav-link'
 
 - @facade.articles.each do |article|
   = article.title
