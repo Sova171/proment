@@ -1,12 +1,12 @@
 %nav
   .navbar-logo
-    = image_tag('logo.png', style: 'width: 7%')
+    = image_tag('logo.png')
     %span.navbar-site-name Proment
   %ul.navbar-links
     %li
-      = link_to 'Hi Vlad', 'https://developer.mozilla.org/ru/docs/Web/CSS/font'
+      = link_to 'Hi Vlad', root_path
     %li
-      = link_to 'Hi EveryBody', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      = link_to 'Hi EveryBody', root_path
   .navbar-flags
     = link_to image_tag('en.jpg'), locale: :en
     = link_to image_tag('ua.jpg'), locale: :ua

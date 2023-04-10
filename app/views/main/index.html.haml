@@ -1,1 +1,41 @@
-%h1= t('.hello')
+%main
+  %div.row.align-items-center.justify-content-center
+    %div.col-md-2
+      %div.card.text-center.mx-auto.mb-3.style
+        = link_to about_index_path do
+          %img.card-img-top
+            = image_tag('about.png')
+          %div.card-body
+            %h5.card-title.text-center= t(".about")
+
+    %div.col-md-2
+      %div.card.text-center.mx-auto.mb-3.style
+        = link_to articles_index_path do
+          %img.card-img-top
+            = image_tag('news.png')
+          %div.card-body
+            %h5.card-title.text-center= t(".news")
+
+    %div.col-md-2
+      %div.card.text-center.mx-auto.mb-3.style
+        = link_to root_path do
+          %img.card-img-top
+            = image_tag('events.png')
+          %div.card-body
+            %h5.card-title.text-center= t(".events")
+
+    %div.col-md-2
+      %div.card.text-center.mx-auto.mb-3.style
+        = link_to root_path do
+          %img.card-img-top
+            = image_tag('publications.png')
+          %div.card-body
+            %h5.card-title.text-center= t(".publications")
+
+    %div.col-md-2
+      %div.card.text-center.mx-auto.mb-3.style
+        = link_to root_path do
+          %img.card-img-top
+            = image_tag('gallery.png')
+          %div.card-body
+            %h5.card-title.text-center= t(".gallery")
