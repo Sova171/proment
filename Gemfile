@@ -49,6 +49,9 @@ gem 'bootstrap'
 
 gem 'faker'
 
+gem 'jquery-rails'
+gem 'rails-ujs'
+
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end

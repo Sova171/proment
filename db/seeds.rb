@@ -3,3 +3,4 @@
 require 'faker'
 
 require_relative 'seeds/partners'
+require_relative 'seeds/articles'
