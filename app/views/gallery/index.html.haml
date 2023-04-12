@@ -1,12 +1,16 @@
-#carouselExample.carousel.carousel-dark.slide
-  .carousel-inner.text-center
-    .carousel-item.active
-      %img.d-block.mx-auto
-        = image_tag('ua.jpg')
-    .carousel-item
-      %img.d-block.mx-auto
-        = image_tag('en.jpg')
-  %button.carousel-control-prev{type: "button", "data-bs-target": "#carouselExample", "data-bs-slide": "prev"}
-    %span.carousel-control-prev-icon{"aria-hidden": "true"}
-  %button.carousel-control-next{type: "button", "data-bs-target": "#carouselExample", "data-bs-slide": "next"}
-    %span.carousel-control-next-icon{"aria-hidden": "true"}
+%br
+- @facade.galleries.each_with_index do |gallery, index|
+  %div.text-center{style: "font-family: 'Roboto', sans-serif;"}
+    %h1= gallery.theme
+    %p= gallery.place
+  .carousel.carousel-dark.slide{id: "carouselExample#{index}"}
+    .carousel-inner.text-center
+      - gallery.images.each_with_index do |image, number|
+        %div{class: "carousel-item #{"active " if number == 0}"}
+          %img.d-block.mx-auto
+            = image_tag image, width: '500px'
+    %button.carousel-control-prev{type: "button", "data-bs-target": "#carouselExample#{index}", "data-bs-slide": "prev"}
+      %span.carousel-control-prev-icon{"aria-hidden": "true"}
+    %button.carousel-control-next{type: "button", "data-bs-target": "#carouselExample#{index}", "data-bs-slide": "next"}
+      %span.carousel-control-next-icon{"aria-hidden": "true"}
+  %hr
