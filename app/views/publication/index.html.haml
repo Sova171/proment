@@ -1,0 +1,14 @@
+%ul.nav.nav-tabs.articles
+  - @facade.categories.each do |category|
+    - if category == params[:category]
+      %li.nav-item
+        = link_to category.second, publication_index_path(category: category), class: 'nav-link active'
+    - else
+      %li.nav-item
+        = link_to category.second, publication_index_path(category: category), class: 'nav-link'
+
+- @facade.publications.each do |publication|
+  = publication.title
+  %br
+  = link_to 'download', pdf_download_url(publication)
+  %hr
