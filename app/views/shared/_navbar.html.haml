@@ -1,9 +1,28 @@
-%nav
-  .navbar-logo
-    = image_tag('logo.png')
-  %ul.navbar-links
-    %li
-      = link_to 'menu', root_path
-  .navbar-flags
-    = link_to image_tag('en.jpg'), locale: :en
-    = link_to image_tag('ua.jpg'), locale: :ua
+%nav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm#mainNav
+  .container.px-5
+    .navbar-brand.fw-bold
+      = link_to image_tag('logo.png', style: 'width: 250px'), root_path
+    %button.navbar-toggler{type: "button", "data-bs-toggle": "collapse", "data-bs-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation"}
+      | Menu
+      %i.bi-list
+    .collapse.navbar-collapse#navbarResponsive
+      %ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to t(".about"), about_index_path
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to t(".news"), articles_path
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to t(".events"), root_path
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to t(".publications"), publication_index_path
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to t(".gallery"), gallery_index_path
+        %li.nav-item
+          .nav-link.me-lg-3
+            = link_to image_tag('en.jpg', style: 'width: 40px'), locale: :en
+            = link_to image_tag('ua.jpg', style: 'width: 40px'), locale: :ua

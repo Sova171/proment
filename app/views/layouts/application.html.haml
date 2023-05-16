@@ -9,11 +9,10 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
     = javascript_include_tag 'application'
+
   %body
-    .header
-      = render 'shared/navbar'
+    = render 'shared/navbar2'
     .container
       = yield
-      %div.push
-    .bottom
-      = render 'shared/footer'
+    %br
+    = render 'shared/footer2'

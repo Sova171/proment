@@ -1,0 +1,54 @@
+%footer.text-center.text-lg-start.bg-light.text-muted
+  / Section: Social media
+  %section.d-flex.justify-content-center.justify-content-lg-between.p-4.border-bottom
+    / Left
+    %div.me-5.d-none.d-lg-block
+      %span Get connected with us on social networks:
+      = link_to image_tag('facebook.png', style: 'width: 25px'), '#'
+      = link_to image_tag('instagram.png', style: 'width: 25px'), '#'
+      = link_to image_tag('telegram.png', style: 'width: 25px'), '#'
+    / Left
+  / Section: Social media
+
+  / Section: Links
+  %section
+    .container.text-center.text-md-start.mt-5
+      / Grid row
+      .row.mt-3
+        / Grid column
+        .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4
+          / Content
+          %h6.text-uppercase.fw-bold.mb-4
+            Company name
+          %p
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+        / Grid column
+
+        / Grid column
+        .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4
+          / Links
+          %h6.text-uppercase.fw-bold.mb-4
+            Useful links
+          %p
+            = link_to t('footer.support'), '#'
+        / Grid column
+
+        / Grid column
+        .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4
+          / Links
+          %h6.text-uppercase.fw-bold.mb-4
+            Contact
+          %p
+            Lviv, UA
+          %p
+            politechnika@example.com
+          %p
+            +(380)*********
+          %p
+            +(380)*********
+        / Grid column
+      / Grid row
+    / .container.text-center.text-md-start.mt-5
+  / Section: Links
+/ Footer

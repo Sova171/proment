@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :articles
     resources :gallery
     resources :publication
+    get 'partners', to: 'partners#index', as: 'partners'
+    get 'kontakts', to: 'kontakts#index', as: 'kontakts'
   end
 
   get 'publication/:id/pdf_download' => 'publication#pdf_download', as: 'pdf_download'
